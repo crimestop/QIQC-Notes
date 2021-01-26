@@ -1,0 +1,65 @@
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{indentfirst} % indent first line
+\usepackage{amsmath,amsthm,amsfonts,amssymb} % ams
+\usepackage[normalem]{ulem} % underline emphasize
+\usepackage{bm} % bold math
+\usepackage{multirow} % multi row in table
+\usepackage{color} % colored link
+\usepackage[lastexercise]{exercise}    % exercise
+\usepackage{makeidx} % index
+\usepackage[linewidth=1pt,nobreak=true,framemethod=TikZ]{mdframed} % box around a content
+\usepackage[titletoc]{appendix} % appendix
+\usepackage{enumitem} % enumerate
+\usepackage{simplewick} % wick diagram
+\usepackage{tikz-cd}  % commutive diagram
+\usepackage{diagbox} % slash in table
+\usepackage[colorlinks]{hyperref} % color the hyperref
+\usepackage{xeCJK} % Chinese support
+
+\allowdisplaybreaks[4]  % allow to break equations 
+\geometry{left=1.5cm,right=2.0cm,top=2.8cm,bottom=2.8cm}
+
+
+
+\renewcommand{\ULdepth}{3pt}  %set uline depth
+\newtheorem{theorem}{Theorem}[section]  %set theorem counter
+\newtheorem{lemma}[theorem]{Lemma}  %set lemma counter
+\newtheorem{axiom}[theorem]{Axiom}  %set axiom counter
+\newtheorem{example}[theorem]{Example}  %set example counter
+\newtheorem{method}[theorem]{Method}  %set method counter
+\newtheorem{definition}[theorem]{Definition}  %set lemma counter
+\newtheorem{corollary}[theorem]{Corollary}  %set lemma counter
+\numberwithin{Exercise}{section}  %set exercise counter
+\renewcommand\arraystretch{1.2}  % set table height
+
+%%% in pack lastexercise
+\renewcommand{\ExerciseHeader}{\leftline{\textbf{\ExerciseName\ \ExerciseHeaderNB\ExerciseHeaderTitle\ExerciseHeaderOrigin\medskip}}} %set exercise title
+\renewcommand{\AnswerHeader}{\medskip\leftline{\textbf{Answer of \ExerciseName\ \ExerciseHeaderNB}\smallskip}}  %set answer title
+\setlength{\ExerciseSkipBefore}{0\baselineskip}  % set spacing
+\setlength{\ExerciseSkipAfter}{0\baselineskip}
+\setlength{\AnswerSkipBefore}{0\baselineskip}
+\setlength{\AnswerSkipAfter}{0\baselineskip}
+\newenvironment{myExercise}{  %boxed exercise
+	\begin{mdframed}
+	\begin{Exercise}
+	}{
+	\end{Exercise}
+	\end{mdframed}	
+	}
+\newenvironment{myAnswer}{  %boxed answer
+		\begin{mdframed}
+			\begin{Answer}
+			}{
+		\end{Answer}
+	\end{mdframed}	
+}
+\newenvironment{myTabuler}{  %tabular with space
+	\vspace{2ex}
+	\begin{tabular}
+		}{
+	\end{tabular}
+	\vspace{2ex}
+}
+
